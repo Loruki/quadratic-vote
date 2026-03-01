@@ -17,18 +17,18 @@
 
 ## 1. Existing QV Tools Overview
 
-| Tool | Type | Open Source | Target Audience | Primary Use Case |
-|---|---|---|---|---|
-| RxC QV | Standalone web app | Yes (GitHub) | Event organizers, civic groups | Event-based QV polls |
-| RxC Voice | Full governance platform | Yes (GitHub) | Communities, DAOs | Multi-stage democratic governance |
-| Snapshot | Web3 governance platform | Yes | DAOs, DeFi protocols, NFT communities | Gasless on-chain governance |
-| Gitcoin Grants | Quadratic funding platform | Yes (partial) | Web3 ecosystem, public goods funders | Quadratic funding allocation |
-| Pol.is | Opinion aggregation | Yes | Governments, researchers, communities | Large-scale deliberation |
-| Civicbase | Survey research platform | Yes (GitHub) | Researchers, policy makers | QVSR academic/civic surveys |
-| Mirror $WRITE Race | Creative community | No | Writers, Web3 creators | Community curation |
-| Anish Agnihotri QV | Dashboard / demo app | Yes (AGPL-3.0) | Developers, communities | Lightweight QV events |
-| Nathan Braun Vote Squared | Simple personal tool | Unknown | Small groups, friends | Informal group decisions |
-| QV Lite (g0v) | Lightweight tool | Yes | Event organizers | Simple QV polls |
+| Tool                      | Type                       | Open Source    | Target Audience                       | Primary Use Case                  |
+| ------------------------- | -------------------------- | -------------- | ------------------------------------- | --------------------------------- |
+| RxC QV                    | Standalone web app         | Yes (GitHub)   | Event organizers, civic groups        | Event-based QV polls              |
+| RxC Voice                 | Full governance platform   | Yes (GitHub)   | Communities, DAOs                     | Multi-stage democratic governance |
+| Snapshot                  | Web3 governance platform   | Yes            | DAOs, DeFi protocols, NFT communities | Gasless on-chain governance       |
+| Gitcoin Grants            | Quadratic funding platform | Yes (partial)  | Web3 ecosystem, public goods funders  | Quadratic funding allocation      |
+| Pol.is                    | Opinion aggregation        | Yes            | Governments, researchers, communities | Large-scale deliberation          |
+| Civicbase                 | Survey research platform   | Yes (GitHub)   | Researchers, policy makers            | QVSR academic/civic surveys       |
+| Mirror $WRITE Race        | Creative community         | No             | Writers, Web3 creators                | Community curation                |
+| Anish Agnihotri QV        | Dashboard / demo app       | Yes (AGPL-3.0) | Developers, communities               | Lightweight QV events             |
+| Nathan Braun Vote Squared | Simple personal tool       | Unknown        | Small groups, friends                 | Informal group decisions          |
+| QV Lite (g0v)             | Lightweight tool           | Yes            | Event organizers                      | Simple QV polls                   |
 
 ---
 
@@ -37,6 +37,7 @@
 ### 2.1 RxC QV (quadraticvote.radicalxchange.org)
 
 **What it looks like (UI/UX)**
+
 - Clean, minimalist aesthetic with dark header and light cream background
 - RadicalxChange branding with yellow accent colors (#edff38)
 - Two primary entry points: "Set up an event" and "Place your votes" via secret code
@@ -45,6 +46,7 @@
 - Positions itself as "the mathematically optimal way to vote in a democratic community"
 
 **Key Features**
+
 - Event creation with email/link-based invite distribution
 - Secret-code-based voter access (no account required)
 - Real-time vote tallying
@@ -53,6 +55,7 @@
 - Supports many ballot items with scroll navigation
 
 **Strengths**
+
 - Extremely low friction for voters (no account, just a link+code)
 - Well-documented, backed by credible academic/civic organization
 - API-first design allows custom integrations
@@ -60,6 +63,7 @@
 - Fully open source
 
 **Weaknesses**
+
 - UI is dated and not mobile-first
 - Limited onboarding/explanation of QV mechanics for new voters
 - No identity verification or Sybil resistance for open elections
@@ -76,12 +80,14 @@ Civic organizations, democratic experimenters, conference organizers, academic r
 ### 2.2 RxC Voice (voice.radicalxchange.org)
 
 **What it looks like (UI/UX)**
+
 - Multi-stage pipeline: Delegation → Deliberation (Pol.is) → Election (QV)
 - TypeScript/SCSS frontend with Django backend, PostgreSQL database
 - Admin-driven workflow; not designed for self-service by general public
 - Integrates Pol.is conversation embeds for the deliberation stage
 
 **Key Features**
+
 - **Delegation Stage:** Each participant starts with 99 voice credits and can delegate credits to others, with a quadratic matching fund amplifying the delegations
 - **Deliberation Stage:** Embedded Pol.is conversations for proposal generation and discussion
 - **Election Stage:** Full quadratic vote on a ballot derived from the deliberation
@@ -89,11 +95,13 @@ Civic organizations, democratic experimenters, conference organizers, academic r
 - Admin panel for managing the full process
 
 **Strengths**
+
 - Only tool that integrates the full democratic pipeline (delegate → deliberate → vote)
 - Theoretically grounded in plurality/quadratic mechanisms
 - Strong academic credibility
 
 **Weaknesses**
+
 - Extremely complex to set up; not self-service
 - Requires admin expertise
 - Last tagged release: March 2022 (v2.0-beta); development activity unclear
@@ -110,6 +118,7 @@ Organizations with technical/organizational capacity to run structured governanc
 ### 2.3 Snapshot (snapshot.org)
 
 **What it looks like (UI/UX)**
+
 - Clean, professional web3-native interface
 - Proposal list view per DAO "space," with individual proposal pages
 - For QV proposals: voters distribute their token-weighted voting power across multiple choices using numeric inputs or sliders
@@ -118,6 +127,7 @@ Organizations with technical/organizational capacity to run structured governanc
 - Wallet-connect authentication (MetaMask, WalletConnect, etc.)
 
 **Key Features**
+
 - Multiple voting types: single choice, approval, ranked choice, quadratic, weighted, basic
 - QV formula: square root of each voter's contribution per choice, summed per option, then squared — emphasizes number of unique voters over whale dominance
 - Space customization: voting power strategies (token holdings, NFT ownership, etc.)
@@ -127,6 +137,7 @@ Organizations with technical/organizational capacity to run structured governanc
 - Open API and extensive ecosystem integrations
 
 **Strengths**
+
 - Best-in-class production-quality UI for Web3 governance
 - Largest network effect in DAO governance
 - Sybil resistance via Gitcoin Passport (now Human Passport) integration
@@ -135,6 +146,7 @@ Organizations with technical/organizational capacity to run structured governanc
 - Active development and large engineering team
 
 **Weaknesses**
+
 - Fundamentally crypto-native: requires a Web3 wallet, excluding non-crypto audiences
 - Voting power tied to token holdings — even QV cannot fully escape plutocratic dynamics if tokens are concentrated
 - QV implementation still susceptible to wallet-splitting Sybil attacks without Passport
@@ -152,6 +164,7 @@ DAOs, DeFi protocols, NFT communities, crypto-native organizations
 ### 2.4 Gitcoin Grants Stack (grants.gitcoin.co)
 
 **What it looks like (UI/UX)**
+
 - E-commerce-style interface: browse projects, add to cart, checkout
 - Grant round pages with project listings, search, and category filters
 - Individual project pages with descriptions, team info, and funding progress
@@ -161,6 +174,7 @@ DAOs, DeFi protocols, NFT communities, crypto-native organizations
 - Gitcoin Passport integration for identity verification before donations count toward matching
 
 **Key Features**
+
 - Quadratic Funding (not pure QV): matching pool distribution uses QF algorithm — number of unique donors matters more than donation size
 - Multi-round checkout: donate to projects across different rounds and chains in one cart/transaction
 - Human Passport (formerly Gitcoin Passport): stamp-based identity verification to qualify for QF matching weight
@@ -169,6 +183,7 @@ DAOs, DeFi protocols, NFT communities, crypto-native organizations
 - Integration with Giveth and other platforms for round execution
 
 **Strengths**
+
 - Most battle-tested QF platform with hundreds of millions distributed
 - Excellent "shopping cart" metaphor that maps naturally to donation behavior
 - Real-time matching estimate is a compelling UX feature that shows donors their impact
@@ -176,6 +191,7 @@ DAOs, DeFi protocols, NFT communities, crypto-native organizations
 - Strong Sybil-resistance via Human Passport
 
 **Weaknesses**
+
 - Quadratic Funding ≠ Quadratic Voting — donors don't allocate a fixed credit budget; they donate real money
 - Significant friction: requires crypto wallet + Human Passport verification + understanding of gas/chains
 - Human Passport UX is complex (aggregating stamps from many services)
@@ -193,6 +209,7 @@ Web3 ecosystem funders, public goods supporters, open-source developers seeking 
 ### 2.5 Pol.is (pol.is / compdemocracy.org)
 
 **What it looks like (UI/UX)**
+
 - Participants see one statement at a time (<140 characters) and click Agree / Disagree / Pass
 - Real-time bee-swarm visualization: opinion groups visible as clusters on a 2D plane, consensus pools to one side, divisiveness to another
 - Participants can submit new statements
@@ -201,6 +218,7 @@ Web3 ecosystem funders, public goods supporters, open-source developers seeking 
 - Clean, minimal interface optimized for statement-by-statement evaluation
 
 **Key Features**
+
 - Real-time clustering algorithm groups participants into "opinion tribes" as votes accumulate
 - Surfaces "consensus statements" — things most groups agree on — which is useful for finding common ground
 - Scales to very large groups (thousands of participants)
@@ -209,6 +227,7 @@ Web3 ecosystem funders, public goods supporters, open-source developers seeking 
 - Open source
 
 **Strengths**
+
 - Uniquely powerful for large-scale opinion aggregation and surfacing consensus
 - No toxic reply threads; anonymous voting reduces social pressure
 - Real-time visualization is genuinely insightful and compelling
@@ -216,6 +235,7 @@ Web3 ecosystem funders, public goods supporters, open-source developers seeking 
 - 10x more people vote on statements than submit them — very high engagement ratio
 
 **Weaknesses**
+
 - Not a QV tool per se — it's an opinion clustering tool, not a resource allocation/preference intensity tool
 - Binary agree/disagree/pass lacks nuance of QV
 - UI is dated and not polished by consumer standards
@@ -233,6 +253,7 @@ Governments, civic tech organizations, researchers, large communities needing st
 ### 2.6 Civicbase (civicbase.io)
 
 **What it looks like (UI/UX)**
+
 - Survey-style interface: voters see one item at a time or a list
 - Credit bar at top of page moves dynamically as credits are allocated
 - Each item has a scale of 0–7 for agree/disagree votes (bi-directional)
@@ -241,6 +262,7 @@ Governments, civic tech organizations, researchers, large communities needing st
 - Results table visible to researchers in real-time
 
 **Key Features**
+
 - Supports QVSR (Quadratic Voting for Survey Research), Conjoint, and Likert survey methods
 - Configurable: questions can be randomized, survey can allow multiple responses, participants can self-identify
 - Optional audio recorder embedded in survey page for qualitative feedback
@@ -249,6 +271,7 @@ Governments, civic tech organizations, researchers, large communities needing st
 - Open source React component library (civicbase/quadratic-vote on GitHub)
 
 **Strengths**
+
 - Best-designed credit visualization among all tools (dynamic bar)
 - Bi-directional voting (agree/disagree) is unique and expressive
 - Designed for research rigor: randomization, controls, multi-methodology
@@ -256,6 +279,7 @@ Governments, civic tech organizations, researchers, large communities needing st
 - Academic backing: paper in AI Magazine (2023) confirming QVSR outperforms Likert in predictive power
 
 **Weaknesses**
+
 - Designed primarily for survey/research contexts, not general governance
 - Limited self-service for non-researchers
 - No identity verification or Sybil resistance
@@ -271,23 +295,27 @@ Academic researchers, policy analysts, municipalities doing citizen engagement s
 ### 2.7 Mirror $WRITE Race (mirror.xyz/race) — Archived / Historical
 
 **What it looks like (UI/UX)**
+
 - Twitter-authenticated leaderboard showing candidates competing for votes
 - Voters allocate token-based votes to writers they want on Mirror
 - Scoring tag indicates whether round uses quadratic or cumulative scoring
 - Rounds run every 2 hours; top 10 receive $WRITE tokens airdropped automatically
 
 **Key Features**
+
 - Web3-native: token-based voting with quadratic weighting to balance whale influence
 - Short rounds (2 hours) create urgency
 - Social integration: prompts ask "What will you write about?" to help voters evaluate candidates
 - Leaderboard with live rank updates
 
 **Strengths**
+
 - Creative and engaging use of QV for community curation
 - Leaderboard with scoring-type label is a clear UX win
 - Quadratic weighting successfully reduced whale dominance vs. prior linear system
 
 **Weaknesses**
+
 - Crypto-gated (requires ETH wallet and tokens)
 - No longer actively deployed as of 2023-2024
 - Not self-service; built for Mirror's specific use case
@@ -302,12 +330,14 @@ Web3 writers and content creators
 ### 2.8 Anish Agnihotri QV Dashboard (github.com/Anish-Agnihotri/quadratic-voting)
 
 **What it looks like (UI/UX)**
+
 - NextJS web application with clean dashboard layout
 - Real-time results display showing votes per option and percentage of credits allocated
 - Event management via secret UUID links (no accounts required)
 - Supported by Gitcoin, positioned as developer reference implementation
 
 **Key Features**
+
 - Event creation with unique voter URLs (event_uuid + voter_id)
 - Real-time vote tallying via API
 - Shows vote counts AND percentage of total credits allocated per choice
@@ -315,12 +345,14 @@ Web3 writers and content creators
 - AGPL-3.0 licensed
 
 **Strengths**
+
 - Simple, developer-friendly codebase (100% JavaScript)
 - No-account voter flow reduces friction
 - Shows both votes and credit percentages (useful for transparency)
 - Easy to self-host
 
 **Weaknesses**
+
 - Very minimal UI; not production-polished
 - No built-in explanation of QV mechanics for voters
 - No identity verification or Sybil resistance
@@ -337,23 +369,27 @@ Developers building QV features; small communities needing a quick QV tool
 ### 2.9 Nathan Braun Vote Squared (nathanbraun.com/voting)
 
 **What it looks like (UI/UX)**
+
 - Built with Elm frontend and GraphQL API
 - Voters given a $25 budget to distribute across options using a dollar-metaphor
 - First vote for any option costs $1, next costs $3 — quadratic cost made tangible via currency
 - Designed for small group decisions (friends, colleagues)
 
 **Key Features**
+
 - Dollar-budget metaphor instead of abstract "credits" — more intuitive for general audiences
 - Small-scale event management
 - Hosted on a $5/month DigitalOcean droplet (signal: built for personal/small use)
 - Transactional emails via Mailjet
 
 **Strengths**
+
 - Dollar metaphor is cognitively accessible — people understand spending money
 - Very low-friction for informal group decisions
 - Shows that the credit-as-currency framing significantly helps comprehension
 
 **Weaknesses**
+
 - Not designed to scale beyond small groups
 - No Sybil resistance
 - Minimal features; effectively a personal project
@@ -373,14 +409,14 @@ Small groups, friends, informal community decisions
 
 **What exists today:**
 
-| Approach | Tool | Effectiveness |
-|---|---|---|
-| Static cost table (1→1, 2→4, 3→9...) | Most tools | Low — abstract numbers don't build intuition |
-| Dollar-currency metaphor ($25 budget) | Nathan Braun Vote Squared | Medium — familiar framing helps |
-| Animated square blocks (credits as visual units) | RxC Voice | Medium — visual but still requires explanation |
-| Interactive "try it" calculator | wtfisqf.com (QF explainer) | High — hands-on discovery beats passive reading |
-| Radial/circle design showing intensity | Civicbase | Medium — elegant but still requires orientation |
-| No explanation whatsoever | Most GitHub demo tools | Very low — high voter confusion |
+| Approach                                         | Tool                       | Effectiveness                                   |
+| ------------------------------------------------ | -------------------------- | ----------------------------------------------- |
+| Static cost table (1→1, 2→4, 3→9...)             | Most tools                 | Low — abstract numbers don't build intuition    |
+| Dollar-currency metaphor ($25 budget)            | Nathan Braun Vote Squared  | Medium — familiar framing helps                 |
+| Animated square blocks (credits as visual units) | RxC Voice                  | Medium — visual but still requires explanation  |
+| Interactive "try it" calculator                  | wtfisqf.com (QF explainer) | High — hands-on discovery beats passive reading |
+| Radial/circle design showing intensity           | Civicbase                  | Medium — elegant but still requires orientation |
+| No explanation whatsoever                        | Most GitHub demo tools     | Very low — high voter confusion                 |
 
 **Best practice identified:** The most effective education pattern is experiential — let users manipulate a small example and observe the cost change before entering the real vote. wtfisqf.com's step-by-step interactive explainer demonstrates this principle well for QF; an analogous pattern for QV is almost entirely absent from existing tools.
 
@@ -390,32 +426,33 @@ Small groups, friends, informal community decisions
 
 **Identified patterns across tools:**
 
-| Pattern | Tools Using It | Pros | Cons |
-|---|---|---|---|
-| +/- stepper buttons per option | RxC QV, most demos | Precise, no motor skill required | Slow for large vote counts; hides cost until you look |
-| Numeric input field | Snapshot (token weight entry) | Familiar, precise | No visual feedback on budget consumption |
-| Dynamic budget bar | Civicbase | Excellent real-time feedback | Requires screen real estate; not obvious what it represents |
-| Dollar metaphor inputs | Vote Squared | Intuitive for most users | Currency framing may be inappropriate in civic contexts |
-| Drag-and-drop (categorize then allocate) | Organize-Then-Vote (CHI 2025 research) | Reduces cognitive load for short surveys | Increases load for long surveys; novel interaction model |
-| Sliders | Rarely used in QV tools | Fast interaction | Imprecise; sliders degrade UX when exact values matter (NN/G guidance) |
+| Pattern                                  | Tools Using It                         | Pros                                     | Cons                                                                   |
+| ---------------------------------------- | -------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------- |
+| +/- stepper buttons per option           | RxC QV, most demos                     | Precise, no motor skill required         | Slow for large vote counts; hides cost until you look                  |
+| Numeric input field                      | Snapshot (token weight entry)          | Familiar, precise                        | No visual feedback on budget consumption                               |
+| Dynamic budget bar                       | Civicbase                              | Excellent real-time feedback             | Requires screen real estate; not obvious what it represents            |
+| Dollar metaphor inputs                   | Vote Squared                           | Intuitive for most users                 | Currency framing may be inappropriate in civic contexts                |
+| Drag-and-drop (categorize then allocate) | Organize-Then-Vote (CHI 2025 research) | Reduces cognitive load for short surveys | Increases load for long surveys; novel interaction model               |
+| Sliders                                  | Rarely used in QV tools                | Fast interaction                         | Imprecise; sliders degrade UX when exact values matter (NN/G guidance) |
 
 **Research finding (CHI 2025 — "Organize, Then Vote"):** A two-phase interface where users first categorize options (Positive / Neutral / Negative) via drag-and-drop, then allocate votes within categories, reduced cognitive load (median 29.85 vs. 39.00) for short surveys. For long surveys the benefit reversed due to behavioral changes — users in the two-phase interface engaged more deeply with each option while text-interface users satisficed. No single interface pattern dominates all contexts.
 
 **Key UX problems with credit allocation (identified by Tim Daub, 2022):**
+
 1. Whole-number vote requirement means voters cannot always spend all their credits (7 leftover credits when 9+9 spent, since √7 ≈ 2.65). This strands credits and feels like a bug.
 2. The formula `credits = votes²` is backward from how humans budget. People want to say "I have 25 credits, how many votes does that buy?" but the math runs the other direction.
 3. Distinguishing "credits" from "votes" is cognitively demanding — most users conflate them.
 
 ### 3.3 Results Display Patterns
 
-| Pattern | Tools | Notes |
-|---|---|---|
-| Sorted bar chart (votes per option) | Snapshot, most tools | Standard, immediately comprehensible |
-| Real-time leaderboard with rank | RxC QV, Mirror $WRITE Race | Adds competitive urgency; can distort late voting behavior |
-| Credit-percentage breakdown alongside vote count | Anish Agnihotri QV | More transparent than votes alone |
-| Bee-swarm cluster visualization | Pol.is | Powerful for opinion clusters but hard to read quickly |
-| Per-option histogram + violin plots | SeeQS (academic tool) | Research-grade; not suitable for general audiences |
-| Radial intensity display | Civicbase | Elegant for survey results; may confuse governance audiences |
+| Pattern                                          | Tools                      | Notes                                                        |
+| ------------------------------------------------ | -------------------------- | ------------------------------------------------------------ |
+| Sorted bar chart (votes per option)              | Snapshot, most tools       | Standard, immediately comprehensible                         |
+| Real-time leaderboard with rank                  | RxC QV, Mirror $WRITE Race | Adds competitive urgency; can distort late voting behavior   |
+| Credit-percentage breakdown alongside vote count | Anish Agnihotri QV         | More transparent than votes alone                            |
+| Bee-swarm cluster visualization                  | Pol.is                     | Powerful for opinion clusters but hard to read quickly       |
+| Per-option histogram + violin plots              | SeeQS (academic tool)      | Research-grade; not suitable for general audiences           |
+| Radial intensity display                         | Civicbase                  | Elegant for survey results; may confuse governance audiences |
 
 **Best practice:** Show both the final vote tally AND a secondary signal (credit allocation %, voter count) so the result is interpretable without doing math. Live results during voting can bias behavior — consider whether to show live results or reveal only at the end.
 
@@ -433,13 +470,13 @@ Small groups, friends, informal community decisions
 
 ### 3.5 Sybil Resistance and Identity
 
-| Tool | Approach | UX Cost |
-|---|---|---|
-| Snapshot | Gitcoin/Human Passport (stamp aggregation) | Medium — requires completing stamps before voting |
-| Gitcoin Grants | Human Passport (stamps + onchain scores) | High — many steps to qualify |
-| RxC QV | Secret code per voter (admin-distributed) | Low — but easily shared/abused |
-| Civicbase | No mechanism | None (research controlled contexts) |
-| All others | No mechanism | None |
+| Tool           | Approach                                   | UX Cost                                           |
+| -------------- | ------------------------------------------ | ------------------------------------------------- |
+| Snapshot       | Gitcoin/Human Passport (stamp aggregation) | Medium — requires completing stamps before voting |
+| Gitcoin Grants | Human Passport (stamps + onchain scores)   | High — many steps to qualify                      |
+| RxC QV         | Secret code per voter (admin-distributed)  | Low — but easily shared/abused                    |
+| Civicbase      | No mechanism                               | None (research controlled contexts)               |
+| All others     | No mechanism                               | None                                              |
 
 **Key finding:** No tool has solved the tension between low-friction access and Sybil resistance gracefully. Human Passport is the most sophisticated but creates significant UX friction. Secret-code systems work for controlled audiences (e.g., legislators) but break down for open internet voting.
 
@@ -481,18 +518,18 @@ Only RxC Voice attempts to integrate deliberation (via Pol.is) with voting. But 
 
 ### 4.2 Opportunity Summary Table
 
-| Gap | Difficulty | Impact | Priority |
-|---|---|---|---|
-| Mobile-first design | Medium | Very High | P0 |
-| Non-crypto / non-technical audience | Low | Very High | P0 |
-| Embedded QV onboarding/education | Medium | High | P1 |
-| Transparent marginal cost display | Low | High | P1 |
-| Graceful leftover-credit handling | Low | Medium | P1 |
-| Embeddable / shareable poll widget | Medium | High | P1 |
-| Bi-directional (support/oppose) voting | Medium | Medium | P2 |
-| Results with contextual explanations | Low | Medium | P2 |
-| Longitudinal / recurring polls | High | Medium | P2 |
-| Lightweight deliberation + vote flow | High | Medium | P3 |
+| Gap                                    | Difficulty | Impact    | Priority |
+| -------------------------------------- | ---------- | --------- | -------- |
+| Mobile-first design                    | Medium     | Very High | P0       |
+| Non-crypto / non-technical audience    | Low        | Very High | P0       |
+| Embedded QV onboarding/education       | Medium     | High      | P1       |
+| Transparent marginal cost display      | Low        | High      | P1       |
+| Graceful leftover-credit handling      | Low        | Medium    | P1       |
+| Embeddable / shareable poll widget     | Medium     | High      | P1       |
+| Bi-directional (support/oppose) voting | Medium     | Medium    | P2       |
+| Results with contextual explanations   | Low        | Medium    | P2       |
+| Longitudinal / recurring polls         | High       | Medium    | P2       |
+| Lightweight deliberation + vote flow   | High       | Medium    | P3       |
 
 ### 4.3 Where We Should Position
 

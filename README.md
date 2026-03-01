@@ -2,7 +2,7 @@
 
 **The quadratic voting tool for people who've never heard of quadratic voting.**
 
-Most polls treat every preference as equal — your "sure, that's fine" counts the same as someone else's "this is critical to me." Quadratic voting fixes this. It lets people express *how much* they care, not just *what* they prefer, by making concentrated votes expensive: 1 vote = 1 credit, 2 votes = 4 credits, 3 votes = 9 credits.
+Most polls treat every preference as equal — your "sure, that's fine" counts the same as someone else's "this is critical to me." Quadratic voting fixes this. It lets people express _how much_ they care, not just _what_ they prefer, by making concentrated votes expensive: 1 vote = 1 credit, 2 votes = 4 credits, 3 votes = 9 credits.
 
 QV has been tested in Colorado's legislature, Gitcoin's $50M+ grant rounds, Taiwan's participatory budgeting, and Optimism's retroactive funding. The mechanism works. But it's still trapped behind steep on-ramps — crypto wallets, academic UIs, or tools that assume you already know what QV is.
 

@@ -9,6 +9,7 @@ This framework helps sharpen feature thinking through targeted questions. Use th
 **The goal is NOT to challenge the PM, but to help them think more clearly.**
 
 Good Socratic questioning:
+
 - Helps uncover assumptions
 - Clarifies fuzzy thinking
 - Surfaces potential issues early
@@ -23,13 +24,16 @@ Use 3-5 questions total. Pick the most relevant from each category.
 ### 1. Problem Clarity Questions
 
 **"What specific user pain point does this solve?"**
+
 - Good: "Voters who receive a poll link don't understand quadratic voting — 100% are first-timers and the cost curve is counterintuitive"
 - Bad: "Users want a better experience"
 
 **"How do we know this is a real problem?"**
+
 - Push for evidence: GitHub issues, user feedback, competitive analysis, usability testing
 
 **"Who experiences this problem most acutely?"**
+
 - Poll creators, voters, or developers?
 - What context? (team decisions, classroom exercises, DAO governance, community prioritization)
 
@@ -40,12 +44,15 @@ Use 3-5 questions total. Pick the most relevant from each category.
 **"Why is this the right solution for that problem?"**
 
 **"What alternatives did you consider? Why did you reject them?"**
+
 - "This is the only way" is a red flag
 
 **"What's the simplest version that solves the core problem?"**
+
 - Can we ship a smaller slice first?
 
 **"How will users discover this feature?"**
+
 - Is it obvious in the UI? Does it need onboarding? A tooltip?
 
 ### 3. Success Criteria Questions
@@ -55,12 +62,14 @@ Use 3-5 questions total. Pick the most relevant from each category.
 **"What would make you consider this feature a failure?"**
 
 **"What metric are we trying to move? By how much?"**
+
 - "Improve voting UX" → "Reduce time from opening poll link to submitting vote from 3 minutes to under 1 minute"
 - "Better results" → "Increase % of voters who view results after voting from 40% to 70%"
 
 ### 4. Constraint & Trade-off Questions
 
 **"What are the technical constraints or risks?"**
+
 - Serverless cold starts? Supabase connection limits? Cookie-based identity limitations?
 
 **"What are we NOT going to do as part of this?"**
@@ -84,6 +93,7 @@ Use 3-5 questions total. Pick the most relevant from each category.
 ## Conversation Flow
 
 **Start Broad, Then Narrow:**
+
 1. Problem clarity
 2. Solution validation + success criteria
 3. Strategic fit

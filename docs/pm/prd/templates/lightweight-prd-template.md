@@ -16,10 +16,11 @@ Define concrete metrics or observable outcomes.
 ...
 
 **Audience: Who are we building for?**
+
 - Poll creators — people running quadratic votes (teams, communities, classrooms, DAOs)
 - Voters — people who receive a link and need to vote quickly
 - Developers — people who fork, contribute, or learn from the codebase
-...
+  ...
 
 **What: Roughly, what does this look like in the product?**
 Which parts of the app does this touch? (landing, creation, voting, results, admin, API)

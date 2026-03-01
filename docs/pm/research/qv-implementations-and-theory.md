@@ -5,6 +5,7 @@
 ### Origins
 
 Quadratic Voting (QV) was developed primarily by:
+
 - **E. Glen Weyl** (Microsoft Research; Founder, RadicalxChange Foundation)
 - **Eric A. Posner** (Professor of Law, University of Chicago)
 - **Steven P. Lalley** (mathematician, University of Chicago) — co-authored the formal proof
@@ -13,14 +14,14 @@ QV builds on earlier mechanism design work by Groves & Ledyard (1977) and Hyllan
 
 ### Key Papers
 
-| Year | Paper | Authors | Significance |
-|------|-------|---------|--------------|
-| 2014 | "Voting Squared: Quadratic Voting in Democratic Politics" | Posner & Weyl | Core political theory application |
-| 2014 | "Quadratic Voting as Efficient Corporate Governance" | Posner & Weyl | U of Chicago Law Review |
-| 2015 | "Quadratic Voting" | Lalley & Weyl | Formal proof: QV approaches efficiency as voter count grows |
-| 2017 | "Quadratic Voting in the Wild" | Quarfoot et al. | First empirical study with real participants |
-| 2018 | *Radical Markets* (book) | Posner & Weyl | Popularized QV to mainstream audiences |
-| 2018 | "Liberal Radicalism" | Buterin, Hitzig & Weyl | Extended QV into Quadratic Funding (QF) |
+| Year | Paper                                                     | Authors                | Significance                                                |
+| ---- | --------------------------------------------------------- | ---------------------- | ----------------------------------------------------------- |
+| 2014 | "Voting Squared: Quadratic Voting in Democratic Politics" | Posner & Weyl          | Core political theory application                           |
+| 2014 | "Quadratic Voting as Efficient Corporate Governance"      | Posner & Weyl          | U of Chicago Law Review                                     |
+| 2015 | "Quadratic Voting"                                        | Lalley & Weyl          | Formal proof: QV approaches efficiency as voter count grows |
+| 2017 | "Quadratic Voting in the Wild"                            | Quarfoot et al.        | First empirical study with real participants                |
+| 2018 | _Radical Markets_ (book)                                  | Posner & Weyl          | Popularized QV to mainstream audiences                      |
+| 2018 | "Liberal Radicalism"                                      | Buterin, Hitzig & Weyl | Extended QV into Quadratic Funding (QF)                     |
 
 ### Core Mechanism
 
@@ -96,12 +97,12 @@ Cost of N votes = N^2 credits. Forces voters to reveal preference **intensity**,
 
 ### Critical Gotchas
 
-| Challenge | Detail |
-|-----------|--------|
-| **Sybil attacks** | Fake identities regain linear voting power. Requires identity verification |
-| **Collusion** | Groups simulate single large voter across accounts |
-| **Small group dynamics** | Theoretical proofs assume large N. Small groups (10-20) are noisy |
-| **UX comprehension** | Quadratic cost is non-intuitive. Users allocate suboptimally |
-| **Anonymity vs accountability** | Mechanism works best anonymously but public bodies need transparency |
-| **Leftover credits** | Whole-number math means some credits can never be spent |
-| **Equal budget required** | QV's efficiency requires equal starting budgets for all voters |
+| Challenge                       | Detail                                                                     |
+| ------------------------------- | -------------------------------------------------------------------------- |
+| **Sybil attacks**               | Fake identities regain linear voting power. Requires identity verification |
+| **Collusion**                   | Groups simulate single large voter across accounts                         |
+| **Small group dynamics**        | Theoretical proofs assume large N. Small groups (10-20) are noisy          |
+| **UX comprehension**            | Quadratic cost is non-intuitive. Users allocate suboptimally               |
+| **Anonymity vs accountability** | Mechanism works best anonymously but public bodies need transparency       |
+| **Leftover credits**            | Whole-number math means some credits can never be spent                    |
+| **Equal budget required**       | QV's efficiency requires equal starting budgets for all voters             |

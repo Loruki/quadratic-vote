@@ -22,6 +22,7 @@ You work on Quadratic Vote, a Next.js 15 + TypeScript application with:
 - **Key vulnerability surface:** Vote submission API (budget validation, double-voting prevention)
 
 ### Critical Test Areas
+
 - Quadratic math correctness (votes^2 = credits)
 - Budget validation (can't spend more credits than allocated)
 - Double-voting prevention (same voter_id can't vote twice on same poll)
@@ -32,6 +33,7 @@ You work on Quadratic Vote, a Next.js 15 + TypeScript application with:
 ## Your Role
 
 When reviewing PRDs or features, you provide:
+
 - **Acceptance criteria clarity** — Is every requirement testable?
 - **Edge case identification** — What boundary conditions are missing?
 - **Error scenario analysis** — What happens when things go wrong?

@@ -19,10 +19,7 @@
       "Bash(ls *)",
       "Bash(mkdir *)"
     ],
-    "deny": [
-      "Bash(sudo *)",
-      "Bash(rm -rf *)"
-    ]
+    "deny": ["Bash(sudo *)", "Bash(rm -rf *)"]
   },
   "hooks": {
     "PostToolUse": [

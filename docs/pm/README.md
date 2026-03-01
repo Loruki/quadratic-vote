@@ -25,16 +25,17 @@ docs/pm/
 
 Custom agents in `.claude/agents/` review your work from different perspectives:
 
-| Agent | Emoji | Focus |
-|-------|-------|-------|
-| `engineer` | (@_@) | Technical feasibility, architecture, security, performance |
-| `designer` | (~‿~) | UX flows, accessibility, mobile, interaction design |
-| `stakeholder` | (ಠ_ಠ) | Scope discipline, success metrics, prioritization, strategy |
-| `qa-engineer` | (¬_¬) | Testability, edge cases, abuse vectors, error scenarios |
+| Agent         | Emoji  | Focus                                                       |
+| ------------- | ------ | ----------------------------------------------------------- |
+| `engineer`    | (@\_@) | Technical feasibility, architecture, security, performance  |
+| `designer`    | (~‿~)  | UX flows, accessibility, mobile, interaction design         |
+| `stakeholder` | (ಠ_ಠ)  | Scope discipline, success metrics, prioritization, strategy |
+| `qa-engineer` | (¬_¬)  | Testability, edge cases, abuse vectors, error scenarios     |
 
 ## Common Workflows
 
 ### Writing a PRD
+
 ```
 @docs/pm/prd/templates/detailed-prd-template.md
 @docs/pm/prd/templates/socratic-questioning.md
@@ -43,19 +44,23 @@ Custom agents in `.claude/agents/` review your work from different perspectives:
 ```
 
 ### Getting multi-perspective feedback on a PRD
+
 Use the custom agents in `.claude/agents/`:
+
 - `engineer` — Technical feasibility (Next.js, Supabase, Vercel serverless)
 - `designer` — UX and accessibility (first-time voter experience, mobile)
 - `stakeholder` — Scope and strategy (MVP discipline, audience fit, competitive positioning)
 - `qa-engineer` — Testability and edge cases (budget validation, double-voting, abuse)
 
 ### Quick PRD for small features
+
 ```
 @docs/pm/prd/templates/lightweight-prd-template.md
 "Help me write a quick PRD for adding poll expiration dates."
 ```
 
 ### Referencing research
+
 ```
 @docs/pm/research/competitive-analysis.md
 @docs/pm/research/qv-implementations-and-theory.md

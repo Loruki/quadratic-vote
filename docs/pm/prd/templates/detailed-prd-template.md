@@ -28,15 +28,15 @@ What alternatives did we consider? Why did we land with this?
 
 ## Goals
 
-1. *High-level goals in priority order*
-2. *Include measurable goals and qualitative ones*
-3. *Keep it short*
+1. _High-level goals in priority order_
+2. _Include measurable goals and qualitative ones_
+3. _Keep it short_
 
 ## Non-goals
 
-1. *Explicit areas we do NOT plan to address*
-2. *Explain why they are not goals*
-3. *These are as important as the goals*
+1. _Explicit areas we do NOT plan to address_
+2. _Explain why they are not goals_
+3. _These are as important as the goals_
 
 # Solution Alignment
 
@@ -44,41 +44,42 @@ What alternatives did we consider? Why did we land with this?
 
 Plan of record
 
-1. *List features that shape the solution, in priority order*
-2. *Which parts of the app are involved? (landing page, poll creation, voting UI, results, admin, API)*
-3. *Draw the boundaries so the team can focus on how to fill it in*
-4. *Challenge the size — can a smaller piece ship independently?*
+1. _List features that shape the solution, in priority order_
+2. _Which parts of the app are involved? (landing page, poll creation, voting UI, results, admin, API)_
+3. _Draw the boundaries so the team can focus on how to fill it in_
+4. _Challenge the size — can a smaller piece ship independently?_
 
 Future considerations
 
-1. *Features saved for later*
-2. *These might inform how we build now*
+1. _Features saved for later_
+2. _These might inform how we build now_
 
 ### Key Flows
 
 Show the end-to-end experience. This could be written prose, a flow diagram, or screen descriptions.
 
 Consider both flows:
+
 - **Creator flow:** Landing → Create → Get links → Share → Admin → View results
 - **Voter flow:** Receive link → Understand QV → Allocate credits → Submit → See results
 
 ### Key Logic
 
-1. *Rules to guide design and development*
-2. *Common scenarios and edge cases*
-3. *Non-functional requirements (performance, security, accessibility)*
+1. _Rules to guide design and development_
+2. _Common scenarios and edge cases_
+3. _Non-functional requirements (performance, security, accessibility)_
 
 # Development and Launch Planning
 
 ## Key Milestones
 
-| Milestone | Target Date | Owner |
-|-----------|------------|-------|
-| Design / wireframes | | |
-| Core implementation | | |
-| Testing & polish | | |
-| Documentation | | |
-| Ship / merge to main | | |
+| Milestone            | Target Date | Owner |
+| -------------------- | ----------- | ----- |
+| Design / wireframes  |             |       |
+| Core implementation  |             |       |
+| Testing & polish     |             |       |
+| Documentation        |             |       |
+| Ship / merge to main |             |       |
 
 ## Checklist
 
