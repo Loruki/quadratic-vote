@@ -29,24 +29,29 @@ QV solves this by making concentrated votes expensive, naturally reflecting the 
 | Conference planning | Event organizers | "Which talks should we include in the schedule?" |
 | Retrospectives | Agile teams | "What should we improve? Vote with credits, not thumbs" |
 
-## Competitive landscape
+## The QV ecosystem
 
-| Tool | Strengths | Weaknesses |
-|------|-----------|------------|
-| RadicalxChange QV tool | Academic credibility, open-source | Dated UI, complex setup, crypto-focused |
-| Pol.is | Great for opinion mapping | Not truly QV, more about consensus |
-| Snapshot | Crypto-native governance | Requires wallet, crypto-only audience |
-| Google Forms | Universal, simple | No QV mechanism, manual calculation |
-| Slido / Mentimeter | Good UX, real-time | No QV, just basic polling |
+We're part of a growing community of tools, researchers, and advocates working to make collective decisions fairer. These are our allies — each serves a different audience and pushes QV forward in different ways.
 
-## Our positioning
+| Tool | What they do well | Who they serve |
+|------|-------------------|---------------|
+| RadicalxChange QV tool | Academic credibility, open-source, proven in civic experiments | Researchers, civic institutions, QV-aware communities |
+| Pol.is | Opinion mapping, consensus finding at scale | Governments, large-scale deliberation |
+| Snapshot | Crypto-native governance, multiple voting strategies | DAOs, token-holder communities |
+| Civicbase | Best-in-class budget visualization | Academic researchers, survey designers |
+| Google Forms / Slido / Mentimeter | Universal reach, simple UX | Everyone — but without QV's signal |
 
-**The modern, beautiful, zero-friction quadratic voting tool.**
+## Our contribution
+
+**The QV tool for people who've never heard of quadratic voting.**
+
+Every tool above serves people who already understand QV or are in a context where it's explained to them. We serve the person who taps a link on their phone with zero context and needs to *get it* in 90 seconds.
 
 - No sign-up, no login, no wallet — just share a link
-- Interactive demo that teaches QV in 30 seconds
-- Clean, open-source codebase that developers can learn from and fork
-- Deploy your own instance in 5 minutes
+- The interface teaches QV by letting you do it — no docs needed
+- Mobile-first, designed for how poll links actually travel (Slack, WhatsApp, iMessage)
+- Clean, open-source codebase that developers can fork for their own QV experiments
+- We expand the pie: more people experiencing QV means more demand for every tool in the ecosystem
 
 ## Target audiences
 
